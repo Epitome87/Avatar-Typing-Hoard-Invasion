@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avatar Typing Horde Invasion", "Avatar Typing Horde Invasion\Avatar Typing Horde Invasion\Avatar Typing Horde Invasion.csproj", "{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Avatar Typing Horde Invasion Content", "Avatar Typing Horde Invasion\Avatar Typing Horde InvasionContent\Avatar Typing Horde Invasion Content.contentproj", "{5FAFA538-BDE6-4667-96BA-675119B9BE34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pixel Psyche Engine", "Pixel Psyche Engine\Pixel Psyche Engine.csproj", "{9E709228-228C-4982-91CB-9CB1B72B7A43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}.Debug|Xbox 360.Deploy.0 = Debug|Xbox 360
+		{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}.Release|Xbox 360.Build.0 = Release|Xbox 360
+		{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}.Release|Xbox 360.Deploy.0 = Release|Xbox 360
+		{5FAFA538-BDE6-4667-96BA-675119B9BE34}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{5FAFA538-BDE6-4667-96BA-675119B9BE34}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{9E709228-228C-4982-91CB-9CB1B72B7A43}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{9E709228-228C-4982-91CB-9CB1B72B7A43}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{9E709228-228C-4982-91CB-9CB1B72B7A43}.Release|Xbox 360.ActiveCfg = Release|Xbox 360
+		{9E709228-228C-4982-91CB-9CB1B72B7A43}.Release|Xbox 360.Build.0 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

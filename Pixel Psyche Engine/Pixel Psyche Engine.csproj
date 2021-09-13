@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{9E709228-228C-4982-91CB-9CB1B72B7A43}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pixel_Psyche_Engine</RootNamespace>
+    <AssemblyName>Pixel Psyche Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>992a9338-0538-4e31-a70f-884d526cd4ab</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvatarCustomAnimation">
+      <HintPath>..\..\AvatarCustomAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine Code\Achievement System\Achievement.cs" />
+    <Compile Include="Engine Code\Achievement System\AchievementManager.cs" />
+    <Compile Include="Engine Code\Achievement System\IAchievementTrackable.cs" />
+    <Compile Include="Engine Code\Audio Management\AudioManager.cs" />
+    <Compile Include="Engine Code\Avatar\Avatar Animation\AvatarBaseAnimation.cs" />
+    <Compile Include="Engine Code\Avatar\Avatar Animation\AvatarBlendedAnimation.cs" />
+    <Compile Include="Engine Code\Avatar\Avatar Animation\AvatarCustomAnimation.cs" />
+    <Compile Include="Engine Code\Avatar\Avatar Animation\AvatarMultipleAnimation.cs" />
+    <Compile Include="Engine Code\Avatar\Avatar.cs" />
+    <Compile Include="Engine Code\Avatar\AvatarEnums.cs" />
+    <Compile Include="Engine Code\Avatar\AvatarManager.cs" />
+    <Compile Include="Engine Code\Camera\Camera Effect\CameraEffect.cs" />
+    <Compile Include="Engine Code\Camera\Camera Effect\ContraZoomEffect.cs" />
+    <Compile Include="Engine Code\Camera\Camera Effect\MoveEffect.cs" />
+    <Compile Include="Engine Code\Camera\Camera Effect\PointEffect.cs" />
+    <Compile Include="Engine Code\Camera\Camera Effect\RotateEffect.cs" />
+    <Compile Include="Engine Code\Camera\Camera Effect\ZoomEffect.cs" />
+    <Compile Include="Engine Code\Camera\Camera Types\Camera.cs" />
+    <Compile Include="Engine Code\Camera\Camera Types\CinematicCamera.cs" />
+    <Compile Include="Engine Code\Camera\Camera Types\FirstPersonCamera.cs" />
+    <Compile Include="Engine Code\Camera\Camera Types\FreeRoamCamera.cs" />
+    <Compile Include="Engine Code\Camera\Camera Types\ThirdPersonCamera.cs" />
+    <Compile Include="Engine Code\Camera\CameraManager.cs" />
+    <Compile Include="Engine Code\Camera\ICameraTrackable.cs" />
+    <Compile Include="Engine Code\Debug Utilities\FPS Counter\FpsCounter.cs" />
+    <Compile Include="Engine Code\Debug Utilities\Safe Area\AlignedSpriteBatch.cs" />
+    <Compile Include="Engine Code\Debug Utilities\Safe Area\SafeAreaOverlay.cs" />
+    <Compile Include="Engine Code\Engine Core\EngineCore.cs" />
+    <Compile Include="Engine Code\Game Components\Bar.cs" />
+    <Compile Include="Engine Code\Game Components\Countdown.cs" />
+    <Compile Include="Engine Code\Game Settings\GameSettings.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics 2D\GraphicsHelper.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics 2D\MySpriteBatch.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics 3D\Model3D.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics 3D\Quad.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics 3D\SkyBox.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics Management\ICollidable.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics Management\ICullable.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics Management\ILightable.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics Management\IOcclusion.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics Management\ISceneObject.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics Management\SceneGraphManager.cs" />
+    <Compile Include="Engine Code\Graphics Core\Graphics Management\SceneObject.cs" />
+    <Compile Include="Engine Code\Input\InputState.cs" />
+    <Compile Include="Engine Code\Input\KeysHelper.cs" />
+    <Compile Include="Engine Code\Online Leaderboards\Leaderboards\IOnlineSyncTarget.cs" />
+    <Compile Include="Engine Code\Online Leaderboards\Leaderboards\OnlineDataSyncManager.cs" />
+    <Compile Include="Engine Code\Online Leaderboards\Leaderboards\TopScoreEntry.cs" />
+    <Compile Include="Engine Code\Online Leaderboards\Leaderboards\TopScoreList.cs" />
+    <Compile Include="Engine Code\Online Leaderboards\Leaderboards\TopScoreListContainer.cs" />
+    <Compile Include="Engine Code\Online Leaderboards\OnlineLeaderboard.cs" />
+    <Compile Include="Engine Code\Particle System\Particle.cs" />
+    <Compile Include="Engine Code\Particle System\ParticleEngine.cs" />
+    <Compile Include="Engine Code\Resource Management\Resource Types\GameResourceBase.cs" />
+    <Compile Include="Engine Code\Resource Management\Resource Types\GameResourceFont.cs" />
+    <Compile Include="Engine Code\Resource Management\Resource Types\GameResourceModel.cs" />
+    <Compile Include="Engine Code\Resource Management\Resource Types\GameResourceTexture2D.cs" />
+    <Compile Include="Engine Code\Resource Management\ResourceManager.cs" />
+    <Compile Include="Engine Code\Screen Management\BarMenuEntry.cs" />
+    <Compile Include="Engine Code\Screen Management\GameScreen.cs" />
+    <Compile Include="Engine Code\Screen Management\MenuEntry.cs" />
+    <Compile Include="Engine Code\Screen Management\MenuScreen.cs" />
+    <Compile Include="Engine Code\Screen Management\PagedMenuScreen.cs" />
+    <Compile Include="Engine Code\Screen Management\PlayerIndexEventArgs.cs" />
+    <Compile Include="Engine Code\Screen Management\Screen Templates\AwardPopUpScreen.cs" />
+    <Compile Include="Engine Code\Screen Management\Screen Templates\AwardUnlockedScreen.cs" />
+    <Compile Include="Engine Code\Screen Management\Screen Templates\CreditScreen.cs" />
+    <Compile Include="Engine Code\Screen Management\Screen Templates\SavePopUpScreen.cs" />
+    <Compile Include="Engine Code\Screen Management\ScreenManager.cs" />
+    <Compile Include="Engine Code\Storage\StorageDeviceManager.cs" />
+    <Compile Include="Engine Code\Storage\StorageManager.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\BounceEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\ExplosionEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\FadeEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\MirroredEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\MoveInEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\PulsateEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\RandomFloatyEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\ReadingEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\TextEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\TypingEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text Effect\ZoomEffect.cs" />
+    <Compile Include="Engine Code\Text Management\Text\TextManager.cs" />
+    <Compile Include="Engine Code\Text Management\Text\TextObject.cs" />
+    <Compile Include="Engine Code\Xbox Guide\SimpleGuideMessageBox.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveGameData.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

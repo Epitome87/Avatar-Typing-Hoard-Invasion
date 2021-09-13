@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B1F42215-3042-4979-BDA0-C2EAAB72D5A2}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Xbox 360</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Avatar_Typing_Horde_Invasion</RootNamespace>
+    <AssemblyName>Avatar Typing Horde Invasion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Xbox 360</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>69b0c7fd-116b-456c-a3a9-37de7ad9f904</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Xbox 360' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Xbox 360\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Xbox 360' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Xbox 360\Release</OutputPath>
+    <DefineConstants>TRACE;XBOX;XBOX360</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvatarCustomAnimation">
+      <HintPath>..\..\..\AvatarCustomAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="Highscores2">
+      <HintPath>..\..\..\Highscores2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entry Point\AvatarTypingGame.cs" />
+    <Compile Include="Game Code\Game Objects\Achievements\AchievementList.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\BackwardTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\BossTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\DancingTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\DeflatableTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\EnemyManager.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\ExplosiveTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\HordeTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\KamikazeTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\NormalTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\SpeedsterTypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Enemies\TypingEnemy.cs" />
+    <Compile Include="Game Code\Game Objects\Items\Item.cs" />
+    <Compile Include="Game Code\Game Objects\Levels\ArcadeLevel.cs" />
+    <Compile Include="Game Code\Game Objects\Levels\BonusLevel.cs" />
+    <Compile Include="Game Code\Game Objects\Levels\ChaseLevel.cs" />
+    <Compile Include="Game Code\Game Objects\Levels\Level.cs" />
+    <Compile Include="Game Code\Game Objects\Player\GamerInformation.cs" />
+    <Compile Include="Game Code\Game Objects\Player\Player.cs" />
+    <Compile Include="Game Code\Game Objects\Stages\FortressStage.cs" />
+    <Compile Include="Game Code\Game Objects\Stages\GraveyardStage.cs" />
+    <Compile Include="Game Code\Game Objects\Stages\Stage.cs" />
+    <Compile Include="Game Code\Game Objects\Typing Word\TypingWord.cs" />
+    <Compile Include="Game Code\Game Screens\Background Screens\BackgroundScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Background Screens\GameplayBackgroundScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Background Screens\PlayerBackgroundScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Enemy Introduction Screens\EnemyIntroductionScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Gameplay Screens\Arcade Mode\ArcadeGameplayScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Gameplay Screens\Arcade Mode\ArcadeModeCompleteScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Gameplay Screens\Arcade Mode\StageIntroScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Gameplay Screens\Arcade Mode\WaveCompleteScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Gameplay Screens\Game Over\GameOverArcadeModeScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Gameplay Screens\Game Over\GameOverSurvivalModeScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Gameplay Screens\Survival Mode\SurvivalGameplayScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Loading Screens\AnimatedLoadingScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Loading Screens\LoadingScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Extras Menu\AvatarTypingCreditsScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Extras Menu\AwardsScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\ExtrasMenuScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Global High Scores\GlobalHighScores.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Help &amp; Options Menu\ControlsMenuScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Help &amp; Options Menu\EnemyInfoMenuScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Help &amp; Options Menu\HowToPlayScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Help &amp; Options Menu\SettingsMenuScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\HelpAndOptionsMenuScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\MainMenuScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\ModeSelectScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Sentence Editor Menu\UserWordsScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\Sentence Editor Menu\WordEditorScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Main Menu Screens\StageSelectScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Pop-Up Screens\MessageBoxScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Pop-Up Screens\MessageBoxWithKeyboardScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Pop-Up Screens\PauseMenuScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Start-Up Screens\SplashScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Start-Up Screens\StartScreen.cs" />
+    <Compile Include="Game Code\Game Screens\Trial Mode Screens\BuyScreen.cs" />
+    <Compile Include="Game Settings\AvatarTypingGameSettings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Pixel Psyche Engine\Pixel Psyche Engine.csproj">
+      <Project>{9E709228-228C-4982-91CB-9CB1B72B7A43}</Project>
+      <Name>Pixel Psyche Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Avatar Typing Horde InvasionContent\Avatar Typing Horde Invasion Content.contentproj">
+      <Name>Avatar Typing Horde Invasion Content %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{5FAFA538-BDE6-4667-96BA-675119B9BE34}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
