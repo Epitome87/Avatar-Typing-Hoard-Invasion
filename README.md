@@ -26,3 +26,9 @@ Unfortunately, Xbox Live Indie Games closed down in October of 2017. I do not be
 ![Project Sample](github-assets/ATHI2.jpg)
 ![Project Sample](github-assets/ATHI3.jpg)
 ![Project Sample](github-assets/ATHI4.jpg)
+
+## Gameplay Sample
+
+The following Youtube video is an (apparently satisfied) player who chose to record his gameplay. It is not my video, but rather a good representation of how the average player might have approached playing the game for the first time.
+
+[![Gameplay Video](github-assets/ATHIVideoThumb.png)](https://www.youtube.com/watch?v=_WiE24BPstQ 'Gameplay video. Note: Not mine!')
